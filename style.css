@@ -60,24 +60,36 @@ nav ul li a:hover {
 
 #movie-search button {
     padding: 10px;
-    background-color: #333;
+    background-color: #1f1f1f;
     color: #fff;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#movie-search button:hover {
+    background-color; #ff3c00
 }
 
 #movie-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    padding: 20px
 }
 
 .movie-card {
-    background-color: #fff;
+    background-color: #1e1e1e;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.02);
 }
 
 .movie-card img {
@@ -87,7 +99,7 @@ nav ul li a:hover {
 
 .movie-card h3 {
     padding: 10px;
-    background-color: #333;
+    background-color: #1f1f1f;
     color: #fff;
     margin: 0;
 }
